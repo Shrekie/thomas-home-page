@@ -28,6 +28,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/html/index.html');
 })
 
-app.listen(process.env.PORT, () => {
+app.listen('0.0.0.0' + process.env.PORT, () => {
 	console.log('Started on port ', process.env.PORT);
 });
