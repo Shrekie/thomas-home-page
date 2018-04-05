@@ -1,0 +1,17 @@
+{
+  "name": "thomas-home-page",
+  "description": "",
+  "main": "server/server.js",
+  "authors": [
+    "Thomas Lindauer"
+  ],
+  "license": "ISC",
+  "homepage": "*",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
