@@ -1,4 +1,4 @@
-require('./config/config.js');
+const config = require('./config/config.js');
 
 // Package imports
 const express = require('express')
@@ -28,6 +28,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/html/index.html');
 })
 
-app.listen(process.env.PORT, '0.0.0.0', () => {
-	console.log('Started on port ', process.env.PORT);
-});
+if(config.env == 'development'){
+	require('./config/development.js').createDevServer(app);
+}else{
+	app.listen(process.env.PORT, '0.0.0.0', () => {
+		console.log('Started on port ', process.env.PORT);
+	});
+}
