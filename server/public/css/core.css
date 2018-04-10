@@ -1,3 +1,13 @@
 .projectList{
     margin-top:20px;
 }
+
+body{
+    background: linear-gradient(#17a2b8, #17a2b880);
+}
+
+.thomasheader{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 15px;
+}
