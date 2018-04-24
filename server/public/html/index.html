@@ -22,18 +22,24 @@
     </head>
 
     <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="col-md-12 text-center">
             <div class="page-header thomasheader">
                 <h1>Thomas Lindauer</h1>
                 <small>Full-Stack Web & Software Development</small>
             </div>
         </div>
-        <div class="col-8 offset-2 projectList">
+        <div class="row mt-4" ng-show="populatedIframe">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
                 <h4>Applications</h4>
+            </div>
+        </div>
+        <div class="row text-center" ng-show="populatedIframe">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
                 <ul class="list-group">
                     <li class="list-group-item"><a href='https://whenyousmile.tlindauer.com/'>when-you-smile</a></li>
                 </ul>
+            </div>
         </div>
         <div class="col-8 offset-2 projectList text-center">
             <i class="fab fa-github"></i><a href='https://github.com/Shrekie/'> github</a>
